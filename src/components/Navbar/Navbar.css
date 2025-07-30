@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 30px;
+  border-radius: 4px;
+  box-shadow: 3px 0px 15px 0px rgb(203, 203, 203);
+}
+
+.navbar__div {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__main {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.navbar__main:hover {
+  cursor: pointer;
+}
+
+.main__code-icon {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: all 250ms ease-in-out;
+}
+
+.navbar__main:hover .main__code-icon {
+  transform: scale(1.2) rotate(10deg);
+  background-color: rgba(148, 234, 245, 0.15);
+}
+
+.navbar__list {
+  margin-left: 50px;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.cv-download__button {
+  padding: 5px 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.cv-download__button:hover {
+  cursor: pointer;
+}
