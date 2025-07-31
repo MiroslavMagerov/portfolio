@@ -38,6 +38,28 @@
   background-color: rgba(148, 234, 245, 0.15);
 }
 
+.main__title {
+  background: linear-gradient(
+    to right,
+    #9058d5,
+    #5a40cd,
+    #4b9af9,
+    #5a40cd,
+    #9058d5
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
+
 .navbar__list {
   margin-left: 50px;
   list-style: none;
@@ -48,16 +70,48 @@
   gap: 30px;
 }
 
+.list__list-item {
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.list__list-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-image: linear-gradient(to right, #9058d5, #5a40cd, #4b9af9);
+  transition: width 0.4s ease;
+}
+
+.list__list-item:hover {
+  cursor: pointer;
+  background-position: right center;
+}
+
+.list__list-item:hover::after {
+  width: 100%;
+}
+
 .cv-download__button {
   padding: 5px 13px;
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: all 250ms ease-in-out;
 }
 
+.cv-download__button {
+  font-weight: 500;
+}
+
 .cv-download__button:hover {
   cursor: pointer;
+  box-shadow: 0px 5px 15px -5px rgba(0, 255, 255, 0.687);
+  transform: translateY(-5px);
 }
