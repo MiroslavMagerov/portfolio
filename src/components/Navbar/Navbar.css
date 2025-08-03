@@ -4,7 +4,7 @@
   width: 100%;
   padding: 1rem 30px;
   border-radius: 4px;
-  box-shadow: 3px 0px 15px 0px rgb(203, 203, 203);
+  box-shadow: 3px 0px 15px 0px var(--var-color-sombras);
 }
 
 .navbar__div {
@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  transition: all 250ms ease-in-out;
+  transition: all var(--var-tiempo-animacion-estandar) ease-in-out;
 }
 
 .navbar__main:hover .main__code-icon {
@@ -41,27 +41,23 @@
 .main__title {
   background: linear-gradient(
     to right,
-    #9058d5,
-    #5a40cd,
-    #4b9af9,
-    #5a40cd,
-    #9058d5
+    var(--var-color-gradient-titulo-lila),
+    var(--var-color-gradient-titulo-azul-oscuro),
+    var(--var-color-gradient-titulo-azul-claro),
+    var(--var-color-gradient-titulo-azul-oscuro),
+    var(--var-color-gradient-titulo-lila)
   );
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate-gradient 2.5s linear infinite;
-}
-
-@keyframes animate-gradient {
-  to {
-    background-position: 200%;
-  }
+  animation: animate-gradient var(--var-tiempo-animacion-titulo-gradient) linear
+    infinite;
 }
 
 .navbar__list {
   margin-left: 50px;
+  margin-right: 10px;
   list-style: none;
   display: flex;
   flex: 1;
@@ -74,6 +70,8 @@
   font-weight: 500;
   position: relative;
   overflow: hidden;
+  padding: 5px 0;
+  white-space: nowrap;
 }
 
 .list__list-item::after {
@@ -83,13 +81,19 @@
   left: 0;
   height: 2px;
   width: 0;
-  background-image: linear-gradient(to right, #9058d5, #5a40cd, #4b9af9);
-  transition: width 0.4s ease;
+  background-image: linear-gradient(
+    to right,
+    var(--var-color-gradient-titulo-lila),
+    var(--var-color-gradient-titulo-azul-oscuro),
+    var(--var-color-gradient-titulo-azul-claro)
+  );
+  transition: width var(--var-tiempo-animacion-largo) ease;
 }
 
 .list__list-item:hover {
   cursor: pointer;
   background-position: right center;
+  color: var(--var-color-gradient-titulo-azul-claro);
 }
 
 .list__list-item:hover::after {
@@ -103,7 +107,7 @@
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  transition: all 250ms ease-in-out;
+  transition: all var(--var-tiempo-animacion-estandar) ease-in-out;
 }
 
 .cv-download__button {
@@ -112,6 +116,12 @@
 
 .cv-download__button:hover {
   cursor: pointer;
-  box-shadow: 0px 5px 15px -5px rgba(0, 255, 255, 0.687);
-  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px -5px var(--var-color-gradient-titulo-azul-claro);
+  scale: 1.05;
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
 }

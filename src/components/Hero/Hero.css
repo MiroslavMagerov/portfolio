@@ -1,0 +1,74 @@
+.section__hero {
+  width: 100%;
+  padding: 125px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__content {
+  width: 35%;
+}
+
+.hero__title {
+  font-size: 3.7rem;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+
+.hero__description {
+  color: var(--var-color-texto-secundario);
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.hero__button {
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.hero__button:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.button__text {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.button-contact {
+  background-color: var(--var-color-gradient-titulo-azul-claro);
+}
+
+.hero__info-extra {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-extra__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--var-color-texto-secundario);
+}
+
+.hero__personal-image {
+  border-radius: 9999px;
+}

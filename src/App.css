@@ -1,0 +1,24 @@
+:root {
+  /* COLORES */
+  --var-color-texto-secundario: #535f7a;
+
+  --var-color-sombras: #cbcbcb;
+  --var-color-gradient-titulo-lila: #9058d5;
+  --var-color-gradient-titulo-azul-oscuro: #5a40cd;
+  --var-color-gradient-titulo-azul-claro: #4b9af9;
+
+  /* TIEMPOS ANIMACIONES Y TRANSICIONES */
+  --var-tiempo-animacion-estandar: 250ms;
+  --var-tiempo-animacion-largo: 400ms;
+  --var-tiempo-animacion-titulo-gradient: 2.5s;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+.icon {
+  flex-shrink: 0;
+}
