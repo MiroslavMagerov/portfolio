@@ -3,14 +3,32 @@
   --var-color-texto-secundario: #535f7a;
 
   --var-color-sombras: #cbcbcb;
-  --var-color-gradient-titulo-lila: #9058d5;
-  --var-color-gradient-titulo-azul-oscuro: #5a40cd;
+
+  --var-color-links-hover: #347dcb;
+
   --var-color-gradient-titulo-azul-claro: #4b9af9;
+  --var-color-gradient-titulo-azul-oscuro: #5a40cd;
+  --var-color-gradient-titulo-lila: #9058d5;
+
+  --var-color-gradient-titulo-rosa: #ff69b3;
+
+  --var-color-borde-gris: rgba(0, 0, 0, 0.2);
+  --var-color-azul-oscuro: rgb(37, 99, 235);
+
+  --var-color-amarillo-iconos: #f6d365;
+  --var-color-naranja-iconos: #fda085;
+
+  --var-color-azul-iconos: #667eea;
+  --var-color-morado-iconos: #764ba2;
 
   /* TIEMPOS ANIMACIONES Y TRANSICIONES */
   --var-tiempo-animacion-estandar: 250ms;
   --var-tiempo-animacion-largo: 400ms;
   --var-tiempo-animacion-titulo-gradient: 2.5s;
+  --var-tiempo-animacion-opacidad: 850ms;
+
+  --var-opacidad-inicial: 1;
+  --var-opacidad-final: 0.6;
 }
 
 body {

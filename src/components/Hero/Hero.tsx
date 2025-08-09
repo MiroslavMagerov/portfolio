@@ -1,14 +1,22 @@
-import { Calendar, Github, Mail, MapPin } from "lucide-react";
-import optimusImg from "../../assets/img/optimus.jpg";
+import {
+  Calendar,
+  Code,
+  Github,
+  Mail,
+  MapPin,
+  Sparkles,
+  Star,
+} from "lucide-react";
+import profilePic from "../../assets/img/Profile_pic.png";
 import "./Hero.css";
 
 function Hero() {
   return (
     <section className='section__hero'>
       <div className='hero__content'>
+        <Sparkles className='icon hero__title-icon' />
         <h1 className='hero__title'>
-          Hola, soy Miroslav <br />
-          Desarollador
+          Hola, soy <em>Miroslav Desarollador</em>
         </h1>
         <p className='hero__description'>
           Desarrollador Full Stack especializado en videojuegos con Unity,
@@ -38,11 +46,15 @@ function Hero() {
       <div className='hero__image'>
         <img
           className='hero__personal-image'
-          src={optimusImg}
+          src={profilePic}
           alt='Foto de perfil'
         />
-        <div className='icon image__icon image__icon--star'></div>
-        <div className='icon image__icon image__icon--code'></div>
+        <div className='icon image__icon image__icon--star'>
+          <Star />
+        </div>
+        <div className='icon image__icon image__icon--code'>
+          <Code />
+        </div>
       </div>
     </section>
   );
