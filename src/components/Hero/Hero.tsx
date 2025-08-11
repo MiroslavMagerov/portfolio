@@ -12,16 +12,16 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className='section__hero'>
+    <main className='section__hero'>
       <div className='hero__content'>
         <Sparkles className='icon hero__title-icon' />
         <h1 className='hero__title'>
           Hola, soy <em>Miroslav Desarollador</em>
         </h1>
         <p className='hero__description'>
-          Desarrollador Full Stack especializado en videojuegos con Unity,
-          aplicaciones web modernas con React y arquitecturas backend
-          escalables.
+          Desarrollador Full Stack especializado en aplicaciones web modernas
+          con React, arquitecturas backend escalables, creación de videojuegos
+          con Unity y conocimiento de automatización de Agentes de IA con n8n.
         </p>
         <div className='hero__buttons'>
           <a className='hero__button button-contact'>
@@ -43,7 +43,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className='hero__image'>
+      <div className='images__container'>
         <img
           className='hero__personal-image'
           src={profilePic}
@@ -56,7 +56,7 @@ function Hero() {
           <Code />
         </div>
       </div>
-    </section>
+    </main>
   );
 }
 

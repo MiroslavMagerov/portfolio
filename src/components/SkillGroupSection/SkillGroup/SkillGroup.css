@@ -1,0 +1,12 @@
+.skills__skill {
+  border: 1px solid var(--var-color-borde-gris);
+}
+
+.content__list {
+  list-style: none;
+  width: 100%;
+}
+
+.list__skill-item {
+  width: 15%;
+}

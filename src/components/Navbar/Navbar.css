@@ -25,17 +25,48 @@
   cursor: pointer;
 }
 
-.main__code-icon {
+.navbar__icon-container {
   position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
+}
+
+.navbar__icon-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(148, 234, 245, 0.15) 20%,
+    rgba(148, 234, 245, 0.1) 60%,
+    rgba(148, 234, 245, 0.02) 90%,
+    transparent 100%
+  );
+  transition: all var(--var-tiempo-animacion-estandar) ease-in-out;
+  z-index: -1;
+}
+
+.navbar__main:hover .navbar__icon-container::before {
+  width: 40px;
+  height: 40px;
+}
+
+.main__code-icon {
+  position: relative;
+  border-radius: 9999px;
+  z-index: 2;
   transition: all var(--var-tiempo-animacion-estandar) ease-in-out;
 }
 
 .navbar__main:hover .main__code-icon {
-  transform: scale(1.2) rotate(10deg);
-  background-color: rgba(148, 234, 245, 0.15);
+  transform: scale(1.1) rotate(8deg);
 }
 
 .main__title {

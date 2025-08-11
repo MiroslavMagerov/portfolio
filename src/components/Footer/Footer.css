@@ -1,0 +1,27 @@
+.footer__container {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0;
+  gap: 10px;
+  border-top: 1px solid var(--var-color-borde-gris);
+  align-items: center;
+}
+
+.footer__icon-div {
+  padding: 5px;
+  background-color: #efedfd;
+  border-radius: 25%;
+}
+
+.footer__icon {
+  color: var(--var-color-links-hover);
+}
+
+.footer__text {
+  color: var(--var-color-texto-secundario);
+}
+
+.text__key-word {
+  font-weight: 500;
+  color: var(--var-color-links-hover);
+}
