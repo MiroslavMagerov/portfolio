@@ -7,15 +7,16 @@ function SkillGroupSection() {
     <section className='container__about'>
       <div className='about__header'>
         <h2 className='about__title'>Sobre mí</h2>
-        <p>
+        <p className='about__description'>
           Apasionado por la tecnología y la creación de experiencias digitales
           innovadoras
         </p>
       </div>
+      <div className='separator' />
       <div className='about__skills'>
         <SkillGroup
           icon={Gamepad2}
-          title='Desarrollo de videojuegos'
+          title='Desarrollo de Videojuegos'
           skills={["Unity", "C#", "Blender", "Game Design"]}
         />
         <SkillGroup
@@ -26,7 +27,7 @@ function SkillGroupSection() {
         <SkillGroup
           icon={Server}
           title='Backend'
-          skills={["Node.js", "Pyhton", "Progress SQL", "MongoDB"]}
+          skills={["Node.js", "Pyhton", "Postgress SQL", "MongoDB"]}
         />
         <SkillGroup
           icon={PencilRuler}

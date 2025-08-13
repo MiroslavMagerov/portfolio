@@ -7,7 +7,7 @@
   --var-color-links-hover: #347dcb;
 
   --var-color-gradient-titulo-azul-claro: #4b9af9;
-  --var-color-gradient-titulo-azul-oscuro: #5a40cd;
+  --var-color-gradient-titulo-azul-oscuro: #1835c2;
   --var-color-gradient-titulo-lila: #9058d5;
 
   --var-color-gradient-titulo-rosa: #ff69b3;
@@ -20,6 +20,8 @@
 
   --var-color-azul-iconos: #667eea;
   --var-color-morado-iconos: #764ba2;
+
+  --var-color-background-skill-items: #f1f5f9;
 
   /* TIEMPOS ANIMACIONES Y TRANSICIONES */
   --var-tiempo-animacion-estandar: 250ms;

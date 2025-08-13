@@ -1,12 +1,82 @@
 .skills__skill {
-  border: 1px solid var(--var-color-borde-gris);
+  padding: 20px 25px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 50%,
+    rgba(0, 0, 0, 0.02) 100%
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.content__list {
-  list-style: none;
+.skills__skill:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(0, 0, 0, 0.03) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.skill__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.skill__icon-wrapper {
+  background: linear-gradient(
+    135deg,
+    rgba(227, 242, 253, 0.6) 0%,
+    rgba(187, 222, 251, 0.5) 25%,
+    rgba(144, 202, 249, 0.4) 50%,
+    rgba(100, 181, 246, 0.45) 75%,
+    rgba(66, 165, 245, 0.5) 100%
+  );
+  padding: 12px;
+  border-radius: 12px;
+  color: rgba(25, 118, 210, 0.8);
+  box-shadow: 0 4px 12px rgba(66, 165, 245, 0.12),
+    0 2px 6px rgba(66, 165, 245, 0.08);
+}
+
+.skill__icon {
+  color: blue;
+}
+
+.skill__title {
+  font-weight: 500;
+}
+
+.skill__content {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
 }
 
-.list__skill-item {
-  width: 15%;
+.content__skill-item {
+  padding: 3px 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: var(--var-color-background-skill-items);
+  cursor: default;
+  transition: all 220ms ease-in-out;
+}
+
+.content__skill-item:hover {
+  background-color: var(--var-color-links-hover);
+  color: white;
+  scale: 1.05;
 }
